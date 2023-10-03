@@ -1,0 +1,116 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DRAO Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico?v=2">
+    <link rel="stylesheet" href="../css/style.css">	
+	<link rel ="stylesheet" href="../css/stylesheet.css">
+</head>
+<body>
+  
+   <!-- Nav Bar -->
+    <div class="nav-section">
+        <div class="navbar">
+            <div>
+                <img src="../img/logo-3.png" alt="logo" height="60">
+            </div>
+            <div class="nav">
+                <a href="home.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="buy-products.html">All Products</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="query.html" class="active">Contact Us</a>
+                <a href="thumbnail.html">Thumbnail Images</a>
+				<a href="blog.html">Blog</a>
+				<a href="SVG.html">Site Map</a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav bar end -->
+   
+  <!--Query Form-->
+  <div class="query">
+    
+   <form id="myform" method="post" name="quedetail">
+	 <div id="querydetail">
+      <div id="que">
+	   <h2>Further Details</h2>
+	     <!--Input fields-->
+	     <div class="input_field">
+           <label for="fname">First Name: </label>
+           <input type="text" name="fname" id="fname" placeholder="Enter your First Name">
+	     </div>
+	     <div class="input_field">
+           <label for="lname">Surname: </label>
+	       <input type="text" name="lname" id="lname" placeholder="Enter your Surname">
+	     </div>
+         <div class="input_field">	   
+	       <label for="email">Email address: </label>
+	       <input type="text" id="email" name="email" placeholder="Enter your email address">
+         </div>	 
+	     <div class="input_field">
+	       <label for="sub">Subject:</label>
+	       <select class="subj" name="sub" id="sub">
+		     <option value="" disabled selected>Subject</option>
+	         <option value="items">Items</option>
+			 <option value="order">Ordering</option>
+			 <option value="deliver">Delivery</option>
+	 		 <option value="suggestion">Suggestions</option>
+			 <option value="other">Other</option>
+	       </select>
+	     </div>   
+	     <div class="input_field">	
+	       <label for="details">Details: </label>
+	       <textarea name="details" id="details" placeholder="Details" rows="10" cols="30"></textarea>
+         </div>		   
+	     <!--input fields end-->
+		 
+		 <!--View query button-->
+	     <div class="view">
+	       <div class="input_field">
+		   <input type="button" value="View Query" onclick="myFunction()">
+		 </div>
+	   </div> 
+	  </div>	
+     </div>
+	 <!--Query Form end-->
+	 
+	 <!--not to display the summary when the query form has been displayed-->
+		<div id="mysummary" style="display:none;">
+			<!--summary-->
+			<div class="summary">
+				<h2>Summary</h2>
+				<p>First Name: <span id="FNAME"></span></p><br>
+				<p>Surname: <span id="LNAME"></span></p><br>
+				<p>Email address: <span id="EMAIL"></span></p><br>
+				<p>Subject: <span id="SUBJECT"></span></p><br>
+				<p>Details: <span id="DETAILS"></span></p><br>
+			
+		
+			<!--submit button-->
+			<div class="inputButtons">
+				<input type="submit" value="Submit" id="submitbutton" onclick="submitFormFunction()">
+			
+				<br><br>
+			<!--edit button-->
+				<input type="button" value="Edit" id="editbutton" onclick="editFormFunction()">
+			</div>	   
+			</div>	
+		</div>
+    </form>   
+	</div>	
+	<footer class="footer">
+      <div class="line-1">
+        Copyright &copy; 2022 DRAO (Pvt) Ltd. All Rights Reserved.
+      </div>
+      <div class="line-2">
+        Developed by <a href="Student2-details.html">Dulmini Dodawatte</a>
+      </div>
+   </footer>
+
+	<script src="../js/query.js"></script>
+  </body>
+</html>  

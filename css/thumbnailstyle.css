@@ -1,0 +1,19 @@
+/*thumbnail*/
+.flex-container {display: flex;}
+
+.flex {display: flex;
+	   margin: auto;
+	   justify-content: space-around;
+	  }
+/* 
+.center { margin: auto;
+		  width: 40px;
+        } */
+
+.PT {color:black;
+    font-size: 18px;
+    }
+
+.PB {color: black;
+    font-size: 18px;
+    }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    
+     <div id="invoice">Invoice</div>
+         </div>
+
+    <script>
+
+        let arr1 = [];
+        let arr2 = [];
+        let arr3 = [];
+
+        function prodDet(num) {
+            let prodTitle = "prodTitle" + num;
+            let prodPrice = "prodPrice" + num;
+            let qty = "qty" + num;
+            let x =  document.getElementById(prodTitle).textContent;
+            let y =  document.getElementById(prodPrice).textContent;
+            let z =  document.getElementById(qty).value;
+            let lenArr = arr1.length;
+            arr1[lenArr] = x;
+            arr2[lenArr] = y;
+            arr3[lenArr] = z;
+
+        }
+        
+        function calc() {
+            tot = 0;
+            for (let i = 0; i < arr2.length; i++) {
+                val = Number(arr2[i]);
+                qty = Number(arr3[i]);
+                price = val*qty;
+                tot += price;
+                
+            }
+
+            let prevHTML = document.getElementById("invoice").innerHTML
+            document.getElementById("invoice").innerHTML = prevHTML + "<h2>Invoice</h2><div>Total : " + tot;
+
+        }
+    </script>
+</body>
+
+
+  
+
+</html>

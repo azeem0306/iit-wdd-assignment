@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico?v=2">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>DRAO Quiz</title>
+</head>
+<body>
+
+    <!-- Nav Bar -->
+    <div class="nav-section">
+        <div class="navbar">
+            <div>
+                <img src="../img/logo-3.png" alt="logo" height="60">
+            </div>
+            <div class="nav">
+                <a href="home.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="buy-products.html">All Products</a>
+                <a href="quiz.html" class="active">Quiz</a>
+                <a href="query.html">Contact Us</a>
+                <a href="thumbnail.html">Thumbnail Images</a>
+				<a href="blog.html">Blog</a>
+				<a href="SVG.html">Site Map</a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav bar end -->
+
+    <!-- Quiz Result Box -->
+    <div id="box">
+        <div id="marks"></div>
+        <button class="close" onclick="msgbox()">Close</button>
+    </div>
+    <!-- Result Box end -->
+
+    <!-- Quiz Area -->
+    <div class="quizArea">
+        <div class="quizStart">
+            <div class="quizStartOverlay">
+                <div id="title1">
+                    <h1>Welcome to the Sports Quiz!</h1>
+                </div>
+                <button id="quizBtn1" onclick="toggleDisplay();setTimeout(funcQuizResult, 60000);">Start Quiz</button>
+            </div>
+        </div>
+        <div id="title2" style="display: none;">
+            <div class="timer-section">
+                <h1>Let's check your knowledge!</h1>
+                <h1>Time Left: <span id="timer">60</span>s</h1>
+            </div>
+            
+            <form name="form">
+                <ol >
+                    <!-- First Question -->
+                    <li>
+                        What does NBA stand for?<br>
+                        <ul class="aList">
+                            <li><input name="q1" value=-1 type="radio">Net Ball Association</li>
+                            <li><input name="q1" value=2 id="q1" type="radio">National Basketball Association</li>
+                            <li><input name="q1" value=-1 type="radio">National Baseball Association</li>
+                            <li><input name="q1" value=-1 type="radio">National Balling Association</li>
+                        </ul>
+                    </li>
+                    <!-- Second Question -->
+                    <li>
+                        In meters, how big is an Olympic-sized swimming pool?<br>
+                        <ul class="aList">
+                            <li><input name="q2" value=-1 type="radio">50 meters long and 30 meters wide</li>
+                            <li><input name="q2" value=-1 type="radio">25 meters long and 50 meters wide</li>
+                            <li><input name="q2" value=2 id="q2" type="radio">50 meters long and 25 meters wide</li>
+                            <li><input name="q2" value=-1 type="radio">40 meters long and 20 meters wide</li>
+                        </ul>
+                    </li>
+                    <!-- Third Question -->
+                    <li>
+                        Which of the following sports does not use a ball? Golf, tennis, hockey, or polo?<br>
+                        <ul class="aList">
+                            <li><input name="q3" value=2 id="q3" type="radio">Hockey</li>
+                            <li><input name="q3" value=-1 type="radio">Polo</li>
+                            <li><input name="q3" value=-1 type="radio">Golf</li>
+                            <li><input name="q3" value=-1 type="radio">Tennis</li>
+                        </ul>
+                    </li>
+                    <!-- Fourth Question -->
+                    <li>
+                        In what year were women allowed to compete in the modern Olympic games and in what sport?<br>
+                        <ul class="aList">
+                            <li><input name="q4" value=-1 type="radio">1948, gymnastics</li>
+                            <li><input name="q4" value=2 id="q4" type="radio">1900, tennis</li>
+                            <li><input name="q4" value=-1 type="radio">1901, badminton</li>
+                            <li><input name="q4" value=-1 type="radio">1920, netball</li>
+                        </ul>
+                    </li>
+                    <!-- Fifth Question -->
+                    <li>
+                        How many minutes was the longest recorded point in the history of tennis?<br>
+                        <ul class="aList">
+                            <li><input name="q5" value=-1 type="radio">21 minutes</li>
+                            <li><input name="q5" value=-1 type="radio">1 hour 4 minutes</li>
+                            <li><input name="q5" value=-1 type="radio">15 minutes</li>
+                            <li><input name="q5" value=2 id="q5" type="radio">29 minutes</li>
+                        </ul>
+                    </li>
+                    <!-- Sixth Question -->
+                    <li>
+                        During the first-ever modern Olympics, what were the first placers awarded with?<br>
+                        <ul class="aList">
+                            <li><input name="q6" value=-1 type="radio">Gold medal</li>
+                            <li><input name="q6" value=-1 type="radio">Copper medal</li>
+                            <li><input name="q6" value=2 id="q6" type="radio">Silver medal</li>
+                            <li><input name="q6" value=-1 type="radio">Iron medal</li>
+                        </ul>
+                    </li>
+                    <!-- Seventh Question -->
+                    <li>
+                        How many Olympic games were held in countries that no longer exist?<br>
+                        <ul class="aList">
+                            <li><input name="q7" value=-1 type="radio">2</li>
+                            <li><input name="q7" value=-1 type="radio">6</li>
+                            <li><input name="q7" value=2 id="q7" type="radio">3</li>
+                            <li><input name="q7" value=-1 type="radio">0</li>
+                        </ul>
+                    </li>
+                    <!-- Eighth Question -->
+                    <li>
+                        Who was the youngest player to score 10,000 points in the NBA?<br>
+                        <ul class="aList">
+                            <li><input name="q8" value=-1 type="radio">Michael Jordan</li>
+                            <li><input name="q8" value=2 id="q8" type="radio">LeBron James</li>
+                            <li><input name="q8" value=-1 type="radio">Kobe Bryant</li>
+                            <li><input name="q8" value=-1 type="radio">Kevin Durant</li>
+                        </ul>
+                    </li>
+                    <!-- Ninth Question -->
+                    <li>
+                        What was the first city to host the Olympics twice?<br>
+                        <ul class="aList">
+                            <li><input name="q9" value=2 id="q9" type="radio">Paris</li>
+                            <li><input name="q9" value=-1 type="radio">Australia</li>
+                            <li><input name="q9" value=-1 type="radio">USA</li>
+                            <li><input name="q9" value=-1 type="radio">China</li>
+                        </ul>
+                    </li>
+                    <!-- Tenth Question -->
+                    <li>
+                        Where did the first ancient Olympic games take place?<br>
+                        <ul class="aList">
+                            <li><input name="q10" value=-1 type="radio">Paris</li>
+                            <li><input name="q10" value=-1 type="radio">Madrid</li>
+                            <li><input name="q10" value=-1 type="radio">New York</li>
+                            <li><input name="q10" value=2 id="q10" type="radio">Greece</li>
+                        </ul>
+                    </li>
+                </ol>
+            </form>
+        </div>
+        <button id="quizBtn2" style="display: none;" onclick="funcQuizResult()">Submit Answers</button>
+        <!-- Quiz Area End -->
+
+        <!-- Quiz T&C -->
+        <div class="quizTerms" id="terms">
+            <h2>TERMS & CONDITIONS</h2>
+            <p>“THE QUIZ” is designed to test the knowledge of the participants. The quiz competition will be held by these Official Rules (the "Rules") of this competition listed hereinafter: </p>
+            <h3>REGISTRATION FOR “THE QUIZ” CONSTITUTES YOUR ACCEPTANCE OF THESE OFFICIAL RULES:</h3>
+            
+            <span>ORGANISER:</span> The Quiz is organized by DRAO (Pvt) Ltd. <br><br>
+            
+            <span>ELIGIBILITY FOR PARTICIPATING IN THIS QUIZ:</span> The Quiz is open to people (the Participants) anywhere in the world who have completed the age of 18 as of 01-01-2021. <br><br>
+            
+            <span>BINDING AGREEMENT:</span> To enter the Quiz, the entrant must accept the official rules ("Rules"). The Rules consist of:<br><br> 
+            <span>(i)</span> the terms and conditions on the web page; <br><br>
+            <span>(ii)</span> the terms and conditions if any on the Entry Form or the Quiz page. The Participant should read this agreement carefully before entry to ensure that he/she understands and agrees because these Rules form a legally binding agreement concerning this Quiz. <br><br>
+            
+            <span>QUIZ COMPETITION:</span> The Quiz will consist of 10 questions for the participants to answer. <br><br>
+            
+            <span>SELECTION OF WINNERS:</span> To be eligible for the win, a participant must register for the Quiz and complete the Quiz within 1 minute. A win will be awarded if the participant’s score is higher than 5. <br><br>
+            
+            <h3>OTHER CONDITIONS </h3>
+            
+            <span>GENERAL CONDITIONS:</span> All national, state and local laws and regulations apply. DRAO reserves the right to disqualify any Participant from the Quiz if, in DRAO's sole discretion, it reasonably believes that the Participant has attempted to undermine the legitimate operation of The Quiz by cheating, deception, or other unfair playing practices or annoys, abuses, threatens or harasses any other Participants or DRAO. <br><br>
+            
+            <span>PRIVACY:</span> Participants agree that personal data submitted may be collected, processed, stored and otherwise used by DRAO, its affiliates and the consultants to conduct and administer the Quiz. By entering the Quiz, Participants agree to the transmission, processing, disclosing and storage of this data by DRAO, its affiliates and the consultants. <br><br>
+            
+            <span>PUBLICITY:</span> By entering the competition, the participants & attendees permit DRAO to collect any information, from the participant for publication or sharing for the promotional requirement of DRAO. <br><br>
+            
+            <span>INTERNET AND DISCLAIMER:</span> DRAO and its consultant are not responsible for any malfunction of the entire Quiz Site or any late, lost, damaged, misdirected, incomplete, illegible, undeliverable, answers to system errors, failed, incomplete or garbled computer or other telecommunication transmission malfunctions, network connectivity problems, hardware or software failures of any kind. <br><br>
+            
+            <span>RIGHT TO CANCEL, MODIFY OR DISQUALIFY:</span> If for any reason the Quiz is not capable of running as planned, including infection by computer virus, bugs, tampering, unauthorized intervention, fraud, technical failures, or any other causes which corrupt or affect the administration, security, fairness, integrity, or proper conduct of the Quiz, DRAO reserves the right at its sole discretion to cancel, terminate, modify or suspend the Quiz. DRAO further reserves the right to disqualify any Entrant who tampers with the submission process or any other part of the Quiz or Quiz Site. <br><br>
+            
+            <span>FORUM AND RECOURSE TO JUDICIAL PROCEDURES:</span> This Quiz is governed by the laws of Sri Lanka, and only the Supreme Court of Sri Lanka will have exclusive jurisdiction to try any dispute arising from this Quiz. By participating in this Quiz, you agree to be bound by the terms of these Rules and by DRAO's decisions, which are final and binding on all matters about this Quiz. If any provision(s) of these Rules are held to be invalid or unenforceable, all remaining provisions hereof will remain in full force and effect, to the extent permitted by law, the rights to litigate, seek injunctive relief or make any other recourse to judicial or any other procedure in case of disputes or claims resulting from or in connection with this Quiz are hereby excluded, and Participants expressly waive any such rights.<br><br>
+            
+        </div>
+        <!-- T&C End -->
+
+    </div>
+
+    <!-- <hr style="margin-top:70vh; width: 80vw;"> -->
+
+    <!-- Footer -->
+    <footer class="footer quiz-footer">
+
+        <div class="line-1">
+            Copyright &copy; 2022 DRAO (Pvt) Ltd. All Rights Reserved.
+        </div>
+        <div class="line-2">
+            Developed by <a href="Student3-details.html">Azeem Rashard</a>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {margin:0; 
+   box-sizing: border-box;}
+
+body{background-image:url("../img/fitness-workout-sportswear.jpg");
+     color:#000000;
+	 }
+
+/* Query form */
+.query{ position:absolute;
+		max-width:400px;
+		background: #E1E1E1;
+		padding:5px;
+        border-radius:5px;
+		top:50%;
+		left:20%;
+		width:100%;
+		transform:translate(-50%,-50%);}
+
+.query h2{text-align:center;
+          margin-top:10px;
+          margin-bottom	:20px;	
+          color:#010000;}
+		  
+.query  .input_field{margin:10px;
+                     padding:5px;
+					 }
+			   
+.query .input_field .subj {width:100%;
+                           height:35px;
+                           border-radius:10px;
+						   }
+                  
+			   
+.query  .input_field  input[type="text"]{width:100%;
+                                         border:2px solid #e0e0e0;
+                                         padding: 10px;
+										 border-radius:10px;}
+										 
+										 
+.query  .input_field  textarea{width:100%;
+                               border:2px solid #e0e0e0;
+                               padding: 10px;
+							   height:100px;
+							   resize:none;
+							   border-radius:10px;}
+
+/* View Query button */
+.view  .input_field input[type="button"]{width:100%;
+                                        background:#010000;
+                                        color:#ffffff;
+                                        border:10px;
+                                        cursor:pointer;
+                                        font-size:10px;
+										padding:10px;
+                                        text-align:center;}										
+							   
+.view  .input_field input[type="button"]:hover{                           
+                                         background:#E73725;
+                                         transition:0.5s;
+                                         }		
+
+/* Summary*/
+.summary {position:absolute;
+		max-width:400px;
+		background: #E1E1E1;
+		padding:80px;
+        border-radius:10px;
+		top:-220px;
+		left:100%;
+		width;100%;
+		font-size:15px;}
+		  
+/* Submit button*/		  
+.inputButtons input[type="submit"]{width:100%;
+                                    background:#010000;
+                                    color:#ffffff;
+                                    border:10px;
+                                    cursor:pointer;
+                                    font-size:10px;
+								    padding:10px;
+                                    text-align:center;}	  
+			 
+ 
+
+.inputButtons input[type="submit"]:hover{                           
+                                         background:#E73725;
+                                         transition:0.5s;
+                                         }							
+
+/* Edit button */
+.inputButtons input[type="button"]{width:100%;
+                                    background:#010000;
+                                    color:#ffffff;
+                                    border:10px;
+                                    cursor:pointer;
+                                    font-size:10px;
+								    padding:10px;
+                                    text-align:center;}	  
+			 
+		  
+
+.inputButtons input[type="button"]:hover{                           
+                                         background:#E73725;
+                                         transition:0.5s;
+                                         }																	 
+			 
+
+		
+   

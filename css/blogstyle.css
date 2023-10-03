@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #010000;
+}
+
+
+.header {
+  padding: 20px;
+  font-size: 40px;
+  font-family:Bahnschrift Condensed;
+  text-align: center;
+  background: red;
+  border-radius: 10px;
+}
+
+h2{background-color:#E1E1E1;
+   border-radius:20px;}
+
+.t1 {   
+  float: left;
+  width: 75%;
+ 
+}
+
+
+
+
+.img {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.des {
+   background-color: white;
+   padding: 40px;
+   margin-top: 20px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Thumbnail image</title>
+	<link rel="stylesheet" href="../css/thumbnailstyle.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<style>
+		.blue {background-color: blue;}
+        .red {background-color: red;}
+        .yellow {background-color: yellow;}
+        .green {background-color: green;}
+        .orange {background-color: orange;}
+	</style>
+</head>
+<body>
+
+	 <!-- Nav Bar -->
+	 <div class="nav-section">
+        <div class="navbar">
+            <div>
+                <img src="../img/logo-3.png" alt="logo" height="60">
+            </div>
+            <div class="nav">
+                <a href="home.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="buy-products.html">All Products</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="query.html">Contact Us</a>
+                <a href="thumbnail.html" class="active">Thumbnail Images</a>
+				<a href="blog.html">Blog</a>
+				<a href="SVG.html">Site Map</a>
+            </div>
+        </div>
+    </div>
+    <!-- Nav bar end -->
+
+	<!-- Top section -->
+	<div class="flex-container">
+		<!-- Change text color -->
+		<div>
+			<p class="PT">Page Text Color</p>
+			<select id="sid">
+				<option value="selected hidden"> --Select Color-- </option>
+				<option value="blue">blue</option>
+				<option value="red">red</option>
+				<option value="yellow">yellow</option>
+				<option value="green">green</option>
+				<option value="orange">orange</option>
+			</select>
+			<button onclick="colortx()">Change color</button>
+		</div>
+ 
+		<div class="flex">
+			<!-- Thumbnails section -->
+			<div><a href="Nike.html" target="iframe_a"><img src="../img/Nike.jpg" alt="Nike" width="200" height="150"></a></div>
+			<div><a href="Puma.html" target="iframe_a"><img src="../img/Puma.jpg" alt="Puma" width="200" height="150"></a></div>
+			<div><a href="Adidas.html" target="iframe_a"><img src="../img/Adidas.jpg" alt="Adidas" width="200" height="150"></a></div>
+			<div><a href="New-Balance.html" target="iframe_a"><img src="../img/New_blance.png" alt="New-Balance" width="200" height="150"></a></div>
+			<div><a href="Reebok.html" target="iframe_a"><img src="../img/Reebok.png" alt="Reebok" width="200" height="150"></a></div>
+		</div>
+
+		<!-- Change background color -->
+		<div>
+			<p class="PB">Page Background Color</p>
+			<select id="selectid">
+				<option value="selected hidden"> --Select Color-- </option>
+				<option value="blue">blue</option>
+				<option value="red">red</option>
+				<option value="yellow">yellow</option>
+				<option value="green">green</option>
+				<option value="orange">orange</option>
+			</select>
+			<button onclick="colorbg()">Change color</button>
+		</div>
+	</div>
+	
+	<div class="center">
+		<iframe src="../docs/Nike.html" name="iframe_a" height="800" width="100%" title="Brand"></iframe>
+
+	</div>
+
+	<footer class="footer">
+		<div class="line-1">
+			Copyright &copy; 2022 DRAO (Pvt) Ltd. All Rights Reserved.
+		</div>
+		<div class="line-2">
+			Developed by <a href="Student4-details.html">Ransi Kavindi</a>
+		</div>
+	</footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

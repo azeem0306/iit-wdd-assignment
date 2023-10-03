@@ -1,0 +1,56 @@
+h1 ,h2 , h4 ,ul , li{
+    text-align: center;
+}
+h1{
+    font-size: 400%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+h2{
+    font-size: 300%;
+   
+    color:black;
+    opacity: 0.7;
+}
+h4{
+    font-size: 280%;
+    color: rgb(29, 31, 31);
+    opacity:0.7;
+}
+ul{
+    list-style: none;
+    font-size: 220%;
+    color: rgb(37, 7, 7);
+    text-align: justify;
+    opacity: 0.7;
+   
+}
+
+
+body{
+
+    margin: auto;
+    background-color:lightgrey;
+    background-image:url("../img/logo.png");
+    height: 50%;
+    padding-top: 60px;
+    padding-left: 60px;
+    margin-left: 200px;
+   
+    /* Center and scale the image nicely */
+    /*background-position:relative;*/
+    background-repeat: no-repeat;
+    background-position-x: 5vw;
+    background-position-y: 12vh;
+    background-size: 400px;
+}
+
+  
+.index-footer {
+  position: fixed;
+  width: 80vw;
+  height: 8vh;
+  margin: auto;
+  top: 92vh;
+  left: 10vw;
+}
